@@ -1,0 +1,28 @@
+{
+  "name": "coder",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "curl": "cd ./data && curl -o api-docs.json http://10.8.34.120:8080/v2/api-docs",
+    "gulp": "gulp",
+    "build": "npm run gulp",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "del-gulpsass-blank-lines": "^0.1.3",
+    "gulp": "^3.9.1",
+    "gulp-ejs": "^3.1.0",
+    "gulp-esformatter": "^6.1.0",
+    "gulp-jsfmt": "^0.4.0",
+    "gulp-plugin-prettier": "^1.1.0",
+    "gulp-remove-empty-lines": "^0.1.0",
+    "gulp-remove-lines": "^0.1.0",
+    "gulp-rename": "^1.2.2",
+    "gulp-uglify-es": "^0.1.6",
+    "minimatch": "^3.0.4",
+    "prettier": "^1.8.2"
+  }
+}

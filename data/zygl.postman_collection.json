@@ -1,0 +1,1086 @@
+{
+	"id": "17402a73-dbca-2325-e45b-182d83b94362",
+	"owner": "3130016",
+	"name": "zygl",
+	"description": "",
+	"order": [
+		"87453b9e-9740-6102-79ef-dfc8c0db8413",
+		"9fd6bb05-45eb-d7a8-2f7a-729317d256d2",
+		"429ca3e7-e61c-03bb-ea4c-f677273d7b58",
+		"6d988a16-6980-6ac8-569a-dfb693296a94",
+		"e1a1a8f4-1b1a-ca3c-9d66-2108a8ff5032",
+		"06f22451-99be-eda2-07b6-82c7e7743531",
+		"a8ca614c-479f-de9c-a2b9-3a6111fc8ae1",
+		"c4ed8634-e716-0fc0-8311-05996cb2cd9f",
+		"5c70d345-671d-d3ba-bbef-078e8f44d2ee",
+		"8fc50859-f4e1-c3ad-946a-47c51b3ca5ff",
+		"d9ff6d46-01eb-436b-fcac-3e497aba7477",
+		"a2ae2e09-b8d3-e1ed-db02-dcfb3ff36aee",
+		"2b62cc77-bbf5-c6a3-aa4a-d0bcc8d00df5",
+		"03d00df5-d974-7992-eaa5-1274ad4f7c1b",
+		"06eea505-129e-2336-4420-96e881dd102d",
+		"7ef2cbb0-41c4-b82a-43c1-75ec10dab08d",
+		"bf06c9d0-0808-f832-9fb7-e521f7d6c54f",
+		"60df24d8-cf98-e4d3-a582-0eee39f3eff0",
+		"5bbda6cf-92ee-b1d2-165c-9af6d69e6ce6",
+		"1452c506-750e-fd1b-d898-5be2019bcad6",
+		"b7c3c55d-1a6e-dda6-2543-de59ff367731",
+		"bc085a89-2f07-5329-acb5-bced65965109",
+		"bf24abcf-a8af-3d34-273f-2d5b00d43a11",
+		"8b5d0b43-0391-ae20-27d3-665ea63ffd2d",
+		"91c49e31-7b0d-4f58-d76b-a01b0d7c2f9d",
+		"5c07cd3d-4de3-acdb-04aa-ec2ee3f8a577",
+		"e94c046f-a628-20c2-682f-a0386eb8fafa",
+		"0c6ba89a-89ce-8ac3-7f8e-8656331fcb0d",
+		"c228f3d1-3440-c23a-bbef-5574fc9ee1a6",
+		"326eed32-76cc-fd49-1554-1b40ff398abf",
+		"7fcf9da3-4131-7319-9908-cb545a37d536",
+		"1ca0d858-6d63-ce09-8726-fec35b3b6f1b",
+		"7dc0241e-498d-4fd3-61d0-439b1d01e068",
+		"39e9b6e8-8e8d-0a94-58a3-a3c8fa83524b",
+		"3fae1ffc-fd38-4cf4-5251-e26333f47530"
+	],
+	"folders": [],
+	"folders_order": [],
+	"timestamp": 1520901813387,
+	"public": false,
+	"events": null,
+	"variables": [],
+	"auth": null,
+	"lastUpdatedBy": "3130016",
+	"lastRevision": 3398697452,
+	"team": null,
+	"requests": [
+		{
+			"folder": null,
+			"id": "03d00df5-d974-7992-eaa5-1274ad4f7c1b",
+			"name": "显示仓库列表",
+			"dataMode": "raw",
+			"data": [],
+			"auth": null,
+			"events": null,
+			"descriptionFormat": "html",
+			"description": "{\n  \"userId\": \"用户Id varchar(32) 非\",\n  \"token\": \"验证信息 varchar(32) 非\",\n  \"pageNo\": \"页数 是\",\n  \"pageSize\": \"每页显示的数量 是\",\n  \"findType\": \"查询类型   1.查询列表，2.查询选择框 非\",\n  \"houseType\": \"仓库类型     是\",\n  \"officeId\": \"所属部门ID     是\",\n  \"name\": \"仓库名称     是\"\n}",
+			"variables": null,
+			"headers": "Content-Type: application/json\n",
+			"method": "POST",
+			"pathVariables": {},
+			"url": "{{baseurl}}/a/api/warehouse/list",
+			"queryParams": [],
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"enabled": true
+				}
+			],
+			"pathVariableData": [],
+			"collectionId": "17402a73-dbca-2325-e45b-182d83b94362",
+			"currentHelper": null,
+			"helperAttributes": null,
+			"rawModeData": "{\n  \"userId\": \"{{userId}}\",\n  \"token\": \"{{token}}\",\n  \"pageNo\": \"1\",\n  \"pageSize\": \"10\",\n  \"findType\": \"1\",\n  \"houseType\": \"\",\n  \"officeId\": \"\",\n  \"name\": \"\"\n}"
+		},
+		{
+			"folder": null,
+			"id": "06eea505-129e-2336-4420-96e881dd102d",
+			"name": "显示部件物料号",
+			"dataMode": "raw",
+			"data": [],
+			"auth": null,
+			"events": null,
+			"descriptionFormat": "html",
+			"description": "{\n  \"userId\": \"用户Id varchar(32) 非\",\n  \"token\": \"验证信息 varchar(32) 非\",\n  \"pageNo\": \"页数 是\",\n  \"pageSize\": \"每页显示的数量 是\",\n  \"findType\": \"查询类型   1.查询列表，2.查询选择框 非\",\n  \"modelCode\": \"物料号     是\"\n}",
+			"variables": null,
+			"headers": "Content-Type: application/json\n",
+			"method": "POST",
+			"pathVariables": {},
+			"url": "{{baseurl}}/a/api/deviceModel/list",
+			"queryParams": [],
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"enabled": true
+				}
+			],
+			"pathVariableData": [],
+			"collectionId": "17402a73-dbca-2325-e45b-182d83b94362",
+			"currentHelper": null,
+			"helperAttributes": null,
+			"rawModeData": "{\n  \"userId\": \"{{userId}}\",\n  \"token\": \"{{token}}\",\n  \"pageNo\": \"1\",\n  \"pageSize\": \"10\",\n  \"findType\": \"1\",\n  \"modelCode\": \"\"\n}"
+		},
+		{
+			"folder": null,
+			"id": "06f22451-99be-eda2-07b6-82c7e7743531",
+			"name": "用户信息显示",
+			"dataMode": "raw",
+			"data": [],
+			"auth": null,
+			"events": null,
+			"descriptionFormat": "html",
+			"description": "{\n  \"userId\": \"用户Id varchar(32) 非\",\n  \"token\": \"验证信息 varchar(32) 非\"\n}",
+			"variables": null,
+			"headers": "Content-Type: application/json\n",
+			"method": "POST",
+			"pathVariables": {},
+			"url": "{{baseurl}}/a/api/user/{{userId}}",
+			"queryParams": [],
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"enabled": true
+				}
+			],
+			"pathVariableData": [],
+			"collectionId": "17402a73-dbca-2325-e45b-182d83b94362",
+			"currentHelper": null,
+			"helperAttributes": null,
+			"rawModeData": "{\n  \"userId\": \"{{userId}}\",\n  \"token\": \"{{token}}\"\n}"
+		},
+		{
+			"folder": null,
+			"id": "0c6ba89a-89ce-8ac3-7f8e-8656331fcb0d",
+			"name": "处理任务",
+			"dataMode": "raw",
+			"data": [],
+			"auth": null,
+			"events": null,
+			"descriptionFormat": "html",
+			"description": "{\n  \"userId\": \"用户Id varchar(32) 非\",\n  \"token\": \"验证信息 varchar(32) 非\"\n}",
+			"variables": null,
+			"headers": "Content-Type: application/json\n",
+			"method": "POST",
+			"pathVariables": {},
+			"url": "{{baseurl}}/a/api/actApply/saveAudit",
+			"queryParams": [],
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"enabled": true
+				}
+			],
+			"pathVariableData": [],
+			"collectionId": "17402a73-dbca-2325-e45b-182d83b94362",
+			"currentHelper": null,
+			"helperAttributes": null,
+			"rawModeData": "{\n  \"userId\": \"{{userId}}\",\n  \"token\": \"{{token}}\"\n}"
+		},
+		{
+			"folder": null,
+			"id": "1452c506-750e-fd1b-d898-5be2019bcad6",
+			"name": "申请调拨",
+			"dataMode": "raw",
+			"data": [],
+			"auth": null,
+			"events": null,
+			"descriptionFormat": "html",
+			"description": "{\n  \"token\": \"验证信息 varchar(32)   非\",\n  \"userId\": \"用户ID     非\",\n  \"ApplyUnitId\": \"申请单位     非\",\n  \"ApplyUnitOfficeId\": \"申请部门     非\",\n  \"linkUserId\": \"联系人ID     非\",\n  \"linkUserMobile\": \"联系人电话     非\",\n  \"warehouseId\": \"项目ID     非\",\n  \"warehouseAddress\": \"项目地址     非\",\n  \"arriveDate\": \"要求到货日期     非\",\n  \"remarks\": \"备注     非\",\n  \"actApplyLogList\": \"申请设备信息   申请设备集合 非\",\n  \"deviceType\": \"设备类型     非\",\n  \"deviceName\": \"设备名称     非\",\n  \"manufacturerModelId\": \"厂家型号   设备类型是主机或者主机部件时非空 是\",\n  \"deviceModelId\": \"物料号   设备类型是部件是非空 是\",\n  \"deviceUnit\": \"设备单位     非\",\n  \"applyCount\": \"申请数量     非\",\n  \"applyText\": \"备注     非\"\n}",
+			"variables": null,
+			"headers": "Content-Type: application/json\n",
+			"method": "POST",
+			"pathVariables": {},
+			"url": "{{baseurl}}/a/api/actApply/apply",
+			"queryParams": [],
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"enabled": true
+				}
+			],
+			"pathVariableData": [],
+			"collectionId": "17402a73-dbca-2325-e45b-182d83b94362",
+			"currentHelper": null,
+			"helperAttributes": null,
+			"rawModeData": "{\n  \"userId\": \"{{userId}}\",\n  \"token\": \"{{token}}\",\n  \"ApplyUnitId\": \"申请单位     非\",\n  \"ApplyUnitOfficeId\": \"申请部门     非\",\n  \"linkUserId\": \"联系人ID     非\",\n  \"linkUserMobile\": \"联系人电话     非\",\n  \"warehouseId\": \"项目ID     非\",\n  \"warehouseAddress\": \"项目地址     非\",\n  \"arriveDate\": \"要求到货日期     非\",\n  \"remarks\": \"备注     非\",\n  \"actApplyLogList\": \"申请设备信息   申请设备集合 非\",\n  \"deviceType\": \"设备类型     非\",\n  \"deviceName\": \"设备名称     非\",\n  \"manufacturerModelId\": \"厂家型号   设备类型是主机或者主机部件时非空 是\",\n  \"deviceModelId\": \"物料号   设备类型是部件是非空 是\",\n  \"deviceUnit\": \"设备单位     非\",\n  \"applyCount\": \"申请数量     非\",\n  \"applyText\": \"备注     非\"\n}"
+		},
+		{
+			"folder": null,
+			"id": "1ca0d858-6d63-ce09-8726-fec35b3b6f1b",
+			"name": "验证发货单数据是否合格",
+			"dataMode": "raw",
+			"data": [],
+			"auth": null,
+			"events": null,
+			"descriptionFormat": "html",
+			"description": "{\n  \"token\": \"验证信息 varchar(32)   非\",\n  \"allotId\": \"调拨单ID     非\",\n  \"deliveryLogList\": \"发货设备数据     非\",\n  \"deviceType\": \"设备类型   1.        主机2.        部件3.        主机部件 非\",\n  \"mainCode\": \"统一编号     非\",\n  \"deviceModelId\": \"部件物料号ID   设备类型是部件时必填\",\n  \"modelCode\": \"物料号   设备类型是部件时必填\",\n  \"delFlag\": \"删除标记 0.     不删除1.     删除   非\"\n}",
+			"variables": null,
+			"headers": "Content-Type: application/json\n",
+			"method": "POST",
+			"pathVariables": {},
+			"url": "{{baseurl}}/a/api/actApply/checkFahuoData",
+			"queryParams": [],
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"pathVariableData": [],
+			"collectionId": "17402a73-dbca-2325-e45b-182d83b94362",
+			"currentHelper": null,
+			"helperAttributes": null,
+			"rawModeData": "{\n  \"token\": \"{{token}}\",\n  \"allotId\": \"调拨单ID     非\",\n  \"deliveryLogList\": \"发货设备数据     非\",\n  \"deviceType\": \"设备类型   1.        主机2.        部件3.        主机部件 非\",\n  \"mainCode\": \"统一编号     非\",\n  \"deviceModelId\": \"部件物料号ID   设备类型是部件时必填\",\n  \"modelCode\": \"物料号   设备类型是部件时必填\",\n  \"delFlag\": \"删除标记 0.     不删除1.     删除   非\"\n}"
+		},
+		{
+			"folder": null,
+			"id": "2b62cc77-bbf5-c6a3-aa4a-d0bcc8d00df5",
+			"name": "显示已完成列表",
+			"dataMode": "raw",
+			"data": [],
+			"auth": null,
+			"events": null,
+			"descriptionFormat": "html",
+			"description": "{\n  \"userId\": \"用户Id varchar(32) 非\",\n  \"token\": \"验证信息 varchar(32) 非\",\n  \"pageNo\": \"页数 是\",\n  \"pageSize\": \"每页显示的数量 是\"\n}",
+			"variables": null,
+			"headers": "Content-Type: application/json\n",
+			"method": "POST",
+			"pathVariables": {},
+			"url": "{{baseurl}}/a/api/actAllot/finishData",
+			"queryParams": [],
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"enabled": true
+				}
+			],
+			"pathVariableData": [],
+			"collectionId": "17402a73-dbca-2325-e45b-182d83b94362",
+			"currentHelper": null,
+			"helperAttributes": null,
+			"rawModeData": "{\n  \"userId\": \"{{userId}}\",\n  \"token\": \"{{token}}\",\n  \"pageNo\": \"1\",\n  \"pageSize\": \"10\"\n}"
+		},
+		{
+			"folder": null,
+			"id": "326eed32-76cc-fd49-1554-1b40ff398abf",
+			"name": "保存收货单",
+			"dataMode": "raw",
+			"data": [],
+			"auth": null,
+			"events": null,
+			"descriptionFormat": "html",
+			"description": "{\n  \"userId\": \"用户Id varchar(32) 非\",\n  \"token\": \"验证信息 varchar(32) 非\"\n}",
+			"variables": null,
+			"headers": "Content-Type: application/json\n",
+			"method": "POST",
+			"pathVariables": {},
+			"url": "{{baseurl}}/a/api/actApply/saveGoodsLog",
+			"queryParams": [],
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"enabled": true
+				}
+			],
+			"pathVariableData": [],
+			"collectionId": "17402a73-dbca-2325-e45b-182d83b94362",
+			"currentHelper": null,
+			"helperAttributes": null,
+			"rawModeData": "{\n  \"userId\": \"{{userId}}\",\n  \"token\": \"{{token}}\"\n}"
+		},
+		{
+			"folder": null,
+			"id": "39e9b6e8-8e8d-0a94-58a3-a3c8fa83524b",
+			"name": "查看某个收发货单的详细信息",
+			"dataMode": "raw",
+			"data": [],
+			"auth": null,
+			"events": null,
+			"descriptionFormat": "html",
+			"description": "{\n  \"token\": \"验证信息 varchar(32)   非\",\n  \"id\": \"收发货单id     非\"\n}",
+			"variables": null,
+			"headers": "Content-Type: application/json\n",
+			"method": "POST",
+			"pathVariables": {},
+			"url": "{{baseurl}}/a/api/actDelivery/showDeliveryDetail",
+			"queryParams": [],
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"pathVariableData": [],
+			"collectionId": "17402a73-dbca-2325-e45b-182d83b94362",
+			"currentHelper": null,
+			"helperAttributes": null,
+			"rawModeData": "{\n  \"token\": \"{{token}}\",\n  \"id\": \"234242342342342\"\n}"
+		},
+		{
+			"folder": null,
+			"id": "3fae1ffc-fd38-4cf4-5251-e26333f47530",
+			"name": "某个具体调拨单的数据",
+			"dataMode": "raw",
+			"data": [],
+			"auth": null,
+			"events": null,
+			"descriptionFormat": "html",
+			"description": "{\n  \"token\": \"验证信息 varchar(32)   非\",\n  \"id\": \"调拨单ID     非\"\n}",
+			"variables": null,
+			"headers": "Content-Type: application/json\n",
+			"method": "POST",
+			"pathVariables": {},
+			"url": "{{baseurl}}/a/api/actAllot/0fe7823c72974b7aa8e851658ccf1126",
+			"queryParams": [],
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"pathVariableData": [],
+			"collectionId": "17402a73-dbca-2325-e45b-182d83b94362",
+			"currentHelper": null,
+			"helperAttributes": null,
+			"rawModeData": "{\n  \"token\": \"{{token}}\",\n  \"id\": \"0fe7823c72974b7aa8e851658ccf1126\"\n}"
+		},
+		{
+			"folder": null,
+			"id": "429ca3e7-e61c-03bb-ea4c-f677273d7b58",
+			"name": "设备—添加芯片编号",
+			"dataMode": "raw",
+			"data": [],
+			"auth": null,
+			"events": null,
+			"descriptionFormat": "html",
+			"description": "{\n  \"userId\": \"用户Id varchar(64) 非\",\n  \"chipCode\": \"芯片编号 varchar(32) 非\",\n  \"token\": \"安全码 varchar(32) 登录时返回的Token带回 非\"\n}",
+			"variables": null,
+			"headers": "Content-Type: application/json\n",
+			"method": "POST",
+			"pathVariables": {},
+			"url": "{{baseurl}}/a/api/device/chipCode",
+			"queryParams": [],
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"enabled": true
+				}
+			],
+			"pathVariableData": [],
+			"collectionId": "17402a73-dbca-2325-e45b-182d83b94362",
+			"currentHelper": null,
+			"helperAttributes": null,
+			"rawModeData": "{\n  \"userId\": \"{{userId}}\",\n  \"chipCode\": \"20180102321\",\n  \"token\": \"{{token}}\"\n}"
+		},
+		{
+			"folder": null,
+			"id": "5bbda6cf-92ee-b1d2-165c-9af6d69e6ce6",
+			"name": "申请调拨-选择用户",
+			"dataMode": "raw",
+			"data": [],
+			"auth": null,
+			"events": null,
+			"descriptionFormat": "html",
+			"description": "{\n  \"userId\": \"用户Id varchar(32) 非\",\n  \"token\": \"验证信息 varchar(32) 非\"\n}",
+			"variables": null,
+			"headers": "Content-Type: application/json\n",
+			"method": "POST",
+			"pathVariables": {},
+			"url": "{{baseurl}}/a/api/user/list",
+			"queryParams": [],
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"pathVariableData": [],
+			"collectionId": "17402a73-dbca-2325-e45b-182d83b94362",
+			"currentHelper": null,
+			"helperAttributes": null,
+			"rawModeData": "{\n  \"userId\": \"{{userId}}\",\n  \"token\": \"{{token}}\"\n}"
+		},
+		{
+			"folder": null,
+			"id": "5c07cd3d-4de3-acdb-04aa-ec2ee3f8a577",
+			"name": "显示消息列表",
+			"dataMode": "raw",
+			"data": [],
+			"auth": null,
+			"events": null,
+			"descriptionFormat": "html",
+			"description": "{\n  \"userId\": \"用户Id varchar(32) 非\",\n  \"token\": \"验证信息 varchar(32) 非\",\n  \"pageNo\": \"页数 是\",\n  \"pageSize\": \"每页显示的数量 是\",\n  \"title\": \"通告标题     是\",\n  \"type\": \"通告类型     是\",\n  \"status\": \"通告状态     是\"\n}",
+			"variables": null,
+			"headers": "Content-Type: application/json\n",
+			"method": "POST",
+			"pathVariables": {},
+			"url": "{{baseurl}}/a/api/msgDetail/list",
+			"queryParams": [],
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"enabled": true
+				}
+			],
+			"pathVariableData": [],
+			"collectionId": "17402a73-dbca-2325-e45b-182d83b94362",
+			"currentHelper": null,
+			"helperAttributes": null,
+			"rawModeData": "{\n  \"userId\": \"{{userId}}\",\n  \"token\": \"{{token}}\",\n  \"pageNo\": \"1\",\n  \"pageSize\": \"10\"\n}"
+		},
+		{
+			"folder": null,
+			"id": "5c70d345-671d-d3ba-bbef-078e8f44d2ee",
+			"name": "显示设备管理列表",
+			"dataMode": "raw",
+			"data": [],
+			"auth": null,
+			"events": null,
+			"descriptionFormat": "html",
+			"description": "{\n  \"userId\": \"用户Id varchar(32) 非\",\n  \"token\": \"验证信息 varchar(32) 非\",\n  \"pageNo\": \"页数 是\",\n  \"pageSize\": \"每页显示的数量 是 \",\n  \"deviceType\": \"设备类型 是\",\n  \"deviceName\": \"设备名称 是\",\n  \"manufacturerModelId\": \"主机型号Id 是\",\n  \"deviceModelId\": \"物料号Id 是\",\n  \"warehouseId\": \"所属仓库Id 是 \",\n  \"deviceStatus\": \"设备状态 是\",\n  \"manageOfficeId\": \"管辖单位Id 是\",\n  \"propertyOfficeId\": \"产权单位Id 是\",\n  \"mainCode\": \"统一编号 是\"\n}",
+			"variables": null,
+			"headers": "Content-Type: application/json\n",
+			"method": "POST",
+			"pathVariables": {},
+			"url": "{{baseurl}}/a/api/device/list",
+			"queryParams": [],
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"enabled": true
+				}
+			],
+			"pathVariableData": [],
+			"collectionId": "17402a73-dbca-2325-e45b-182d83b94362",
+			"currentHelper": null,
+			"helperAttributes": null,
+			"rawModeData": "{\n  \"userId\": \"{{userId}}\",\n  \"token\": \"{{token}}\",\n  \"pageNo\": \"1\",\n  \"pageSize\": \"10\",\n  \"deviceType\": \"\",\n  \"deviceName\": \"\",\n  \"manufacturerModelId\": \"\",\n  \"deviceModelId\": \"\",\n  \"warehouseId\": \"\",\n  \"deviceStatus\": \"\",\n  \"manageOfficeId\": \"\",\n  \"propertyOfficeId\": \"\",\n  \"mainCode\": \"\"\n}"
+		},
+		{
+			"folder": null,
+			"id": "60df24d8-cf98-e4d3-a582-0eee39f3eff0",
+			"name": "获取待办任务",
+			"dataMode": "raw",
+			"data": [],
+			"auth": null,
+			"events": null,
+			"descriptionFormat": "html",
+			"description": "{\n  \"userId\": \"用户Id varchar(32) 非\",\n  \"token\": \"验证信息 varchar(32) 非\"\n}",
+			"variables": null,
+			"headers": "Content-Type: application/json\n",
+			"method": "POST",
+			"pathVariables": {},
+			"url": "{{baseurl}}/a/api/actAllot/task",
+			"queryParams": [],
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"enabled": true
+				}
+			],
+			"pathVariableData": [],
+			"collectionId": "17402a73-dbca-2325-e45b-182d83b94362",
+			"currentHelper": null,
+			"helperAttributes": null,
+			"rawModeData": "{\n  \"userId\": \"{{userId}}\",\n  \"token\": \"{{token}}\"\n}"
+		},
+		{
+			"folder": null,
+			"id": "6d988a16-6980-6ac8-569a-dfb693296a94",
+			"name": " 找回密码接口",
+			"dataMode": "raw",
+			"data": [],
+			"auth": null,
+			"events": null,
+			"descriptionFormat": "html",
+			"description": "{\n  \"mobile\": \"手机号码 varchar(32) 非\",\n  \"code\": \"验证码 varchar(32) 非\",\n  \"password\": \"密码 varchar(32) 新密码 非\",\n  \"refPassword\": \"确认密码 varchar(32) 确认新密码 非\"\n}",
+			"variables": null,
+			"headers": "Content-Type: application/json\n",
+			"method": "PUT",
+			"pathVariables": {},
+			"url": "{{baseurl}}/a/api/resetPassword/{{mobile}}",
+			"queryParams": [],
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"pathVariableData": [],
+			"collectionId": "17402a73-dbca-2325-e45b-182d83b94362",
+			"currentHelper": null,
+			"helperAttributes": null,
+			"rawModeData": "{\n  \"mobile\": \"{{mobile}}\",\n  \"code\": \"890237\",\n  \"password\": \"2342423\",\n  \"refPassword\": \"2342423\"\n}"
+		},
+		{
+			"folder": null,
+			"id": "7dc0241e-498d-4fd3-61d0-439b1d01e068",
+			"name": "验证收货单数据是否合格",
+			"dataMode": "raw",
+			"data": [],
+			"auth": null,
+			"events": null,
+			"descriptionFormat": "html",
+			"description": "{\n  \"token\": \"验证信息 varchar(32)   非\",\n  \"deliveryId\": \"发货单ID     非\",\n  \"goodsLogList\": \"收货设备数据     非\",\n  \"deviceType\": \"设备类型   4.        主机5.        部件6.        主机部件 非\",\n  \"mainCode\": \"统一编号     非\",\n  \"deviceModelId\": \"部件物料号ID   设备类型是部件时必填\",\n  \"modelCode\": \"物料号   设备类型是部件时必填\",\n  \"delFlag\": \"删除标记 0.        不删除1.        删除   非\"\n}",
+			"variables": null,
+			"headers": "Content-Type: application/json\n",
+			"method": "POST",
+			"pathVariables": {},
+			"url": "{{baseurl}}/a/api/actApply/checkShouhuoData",
+			"queryParams": [],
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"pathVariableData": [],
+			"collectionId": "17402a73-dbca-2325-e45b-182d83b94362",
+			"currentHelper": null,
+			"helperAttributes": null,
+			"rawModeData": "{\n  \"token\": \"验证信息 varchar(32)   非\",\n  \"deliveryId\": \"发货单ID     非\",\n  \"goodsLogList\": \"收货设备数据     非\",\n  \"deviceType\": \"设备类型   4.        主机5.        部件6.        主机部件 非\",\n  \"mainCode\": \"统一编号     非\",\n  \"deviceModelId\": \"部件物料号ID   设备类型是部件时必填\",\n  \"modelCode\": \"物料号   设备类型是部件时必填\",\n  \"delFlag\": \"删除标记 0.        不删除1.        删除   非\"\n}"
+		},
+		{
+			"folder": null,
+			"id": "7ef2cbb0-41c4-b82a-43c1-75ec10dab08d",
+			"name": "显示机构",
+			"dataMode": "raw",
+			"data": [],
+			"auth": null,
+			"events": null,
+			"descriptionFormat": "html",
+			"description": "{\n  \"userId\": \"用户Id varchar(32) 非\",\n  \"token\": \"验证信息 varchar(32) 非\",\n  \"pageNo\": \"页数 是\",\n  \"pageSize\": \"每页显示的数量 是\",\n  \"findType\": \"查询类型   1.查询列表，2.查询条件选择框 非\",\n  \"officeType\": \"机构类型   3.公司，4.部门 非\",\n  \"shortName\": \"机构短名称     是\"\n}",
+			"variables": null,
+			"headers": "Content-Type: application/json\n",
+			"method": "POST",
+			"pathVariables": {},
+			"url": "{{baseurl}}/a/api/office/list",
+			"queryParams": [],
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"enabled": true
+				}
+			],
+			"pathVariableData": [],
+			"collectionId": "17402a73-dbca-2325-e45b-182d83b94362",
+			"currentHelper": null,
+			"helperAttributes": null,
+			"rawModeData": "{\n  \"userId\": \"{{userId}}\",\n  \"token\": \"{{token}}\",\n  \"pageNo\": \"1\",\n  \"pageSize\": \"10\",\n  \"findType\": \"1\",\n  \"officeType\": \"3\",\n  \"shortName\": \"\"\n}"
+		},
+		{
+			"folder": null,
+			"id": "7fcf9da3-4131-7319-9908-cb545a37d536",
+			"name": "验证调拨单数据是否合格",
+			"dataMode": "raw",
+			"data": [],
+			"auth": null,
+			"events": null,
+			"descriptionFormat": "html",
+			"description": "{\n  \"token\": \"验证信息 varchar(32)   非\",\n  \"allotList\": \"调拨单数据     非\",\n  \"allotLogList\": \"调拨设备数据     非\",\n  \"deviceType\": \"设备类型   1.     主机2.     部件3.     主机部件 非\",\n  \"mainCode\": \"统一编号   设备类型是主机或者主机部件时必填\"\n}",
+			"variables": null,
+			"headers": "Content-Type: application/json\n",
+			"method": "POST",
+			"pathVariables": {},
+			"url": "{{baseurl}}/a/api/actApply/checkDiaoboData",
+			"queryParams": [],
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"enabled": true
+				}
+			],
+			"pathVariableData": [],
+			"collectionId": "17402a73-dbca-2325-e45b-182d83b94362",
+			"currentHelper": null,
+			"helperAttributes": null,
+			"rawModeData": "{\n  \"token\": \"{{token}}\",\n  \"allotList\": \"[]\",\n  \"allotLogList\": \"[]\",\n  \"deviceType\": \"1\",\n  \"mainCode\": \"1\"\n}"
+		},
+		{
+			"id": "87453b9e-9740-6102-79ef-dfc8c0db8413",
+			"headers": "Content-Type: application/json\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"enabled": true,
+					"description": ""
+				}
+			],
+			"url": "{{baseurl}}/a/api/login",
+			"folder": null,
+			"queryParams": [],
+			"events": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "POST",
+			"data": [],
+			"dataMode": "raw",
+			"version": 2,
+			"auth": null,
+			"time": 1520902029947,
+			"name": "登录接口",
+			"description": "{\n  \"mobile\": \"手机号码 varchar(11) 非\",\n  \"password\": \"密码 varchar(32) 非\"\n}",
+			"collectionId": "17402a73-dbca-2325-e45b-182d83b94362",
+			"responses": [],
+			"descriptionFormat": "html",
+			"variables": null,
+			"currentHelper": null,
+			"helperAttributes": null,
+			"rawModeData": "{\n  \"mobile\": \"18616666622\",\n  \"password\": \"py@admin\"\n}"
+		},
+		{
+			"folder": null,
+			"id": "8b5d0b43-0391-ae20-27d3-665ea63ffd2d",
+			"name": "显示通告列表",
+			"dataMode": "raw",
+			"data": [],
+			"auth": null,
+			"events": null,
+			"descriptionFormat": "html",
+			"description": "{\n  \"userId\": \"用户Id varchar(32) 非\",\n  \"token\": \"验证信息 varchar(32) 非\",\n  \"pageNo\": \"页数 是\",\n  \"pageSize\": \"每页显示的数量 是\",\n  \"title\": \"通告标题     是\",\n  \"type\": \"通告类型     是\",\n  \"status\": \"通告状态     是\"\n}",
+			"variables": null,
+			"headers": "Content-Type: application/json\n",
+			"method": "POST",
+			"pathVariables": {},
+			"url": "{{baseurl}}/a/api/oaNotify/list",
+			"queryParams": [],
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"enabled": true
+				}
+			],
+			"pathVariableData": [],
+			"collectionId": "17402a73-dbca-2325-e45b-182d83b94362",
+			"currentHelper": null,
+			"helperAttributes": null,
+			"rawModeData": "{\n  \"userId\": \"{{userId}}\",\n  \"token\": \"{{token}}\",\n  \"pageNo\": \"1\",\n  \"pageSize\": \"10\",\n  \"title\": \"\",\n  \"type\": \"\",\n  \"status\": \"\"\n}"
+		},
+		{
+			"folder": null,
+			"id": "8fc50859-f4e1-c3ad-946a-47c51b3ca5ff",
+			"name": "设备类型、设备名称、设备状态下拉框",
+			"dataMode": "raw",
+			"data": [],
+			"auth": null,
+			"events": null,
+			"descriptionFormat": "html",
+			"description": "{\n  \"menuType\": \"菜单类型 varchar(32) deviceType: 设备类型；deviceName: 设备名称；deviceStatus: 设备状态；非\",\n  \"token\": \"验证信息 varchar(32) 非\",\n  \"deviceType\": \"查询设备名称时需要联动的设备类型 varchar(1) 查询设备名称时必填 是\"\n}",
+			"variables": null,
+			"headers": "Content-Type: application/json\n",
+			"method": "POST",
+			"pathVariables": {},
+			"url": "{{baseurl}}/a/api/device/getMenuData",
+			"queryParams": [],
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"enabled": true
+				}
+			],
+			"pathVariableData": [],
+			"collectionId": "17402a73-dbca-2325-e45b-182d83b94362",
+			"currentHelper": null,
+			"helperAttributes": null,
+			"rawModeData": "{\n  \"menuType\": \"deviceType\",\n  \"token\": \"{{token}}\",\n  \"deviceType\": \"\"\n}"
+		},
+		{
+			"folder": null,
+			"id": "91c49e31-7b0d-4f58-d76b-a01b0d7c2f9d",
+			"name": "显示通告详细",
+			"dataMode": "raw",
+			"data": [],
+			"auth": null,
+			"events": null,
+			"descriptionFormat": "html",
+			"description": "{\n  \"token\": \"验证信息 varchar(32)   非\",\n  \"id\": \"公告ID     非\"\n}",
+			"variables": null,
+			"headers": "Content-Type: application/json\n",
+			"method": "POST",
+			"pathVariables": {},
+			"url": "{{baseurl}}/a/api/oaNotify/16ea8d7bea474daea3b14fa0b8dfa8ce",
+			"queryParams": [],
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"enabled": true
+				}
+			],
+			"pathVariableData": [],
+			"collectionId": "17402a73-dbca-2325-e45b-182d83b94362",
+			"currentHelper": null,
+			"helperAttributes": null,
+			"rawModeData": "{\n  \"token\": \"{{token}}\",\n  \"id\": \"16ea8d7bea474daea3b14fa0b8dfa8ce\"\n}"
+		},
+		{
+			"id": "9fd6bb05-45eb-d7a8-2f7a-729317d256d2",
+			"headers": "Content-Type: application/json\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"enabled": true,
+					"description": ""
+				}
+			],
+			"url": "{{baseurl}}/a/api/warehouse/getMenuData",
+			"folder": null,
+			"queryParams": [],
+			"events": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "POST",
+			"data": [],
+			"dataMode": "raw",
+			"version": 2,
+			"auth": null,
+			"time": 1520902411579,
+			"name": "获取仓库类型",
+			"description": "{\n  \"token\": \"验证信息 varchar(32) 非\"\n}",
+			"collectionId": "17402a73-dbca-2325-e45b-182d83b94362",
+			"responses": [],
+			"descriptionFormat": "html",
+			"variables": null,
+			"currentHelper": null,
+			"helperAttributes": null,
+			"rawModeData": "{\n  \"token\": \"{{token}}\"\n}"
+		},
+		{
+			"folder": null,
+			"id": "a2ae2e09-b8d3-e1ed-db02-dcfb3ff36aee",
+			"name": "显示申请调拨单列表",
+			"dataMode": "raw",
+			"data": [],
+			"auth": null,
+			"events": null,
+			"descriptionFormat": "html",
+			"description": "{\n  \"userId\": \"用户Id varchar(32) 非\",\n  \"token\": \"验证信息 varchar(32) 非\",\n  \"pageNo\": \"页数 是\",\n  \"pageSize\": \"每页显示的数量 是\",\n  \"applyNumber\": \"申请单号 是\",\n  \"applyOfficeId\": \"申请单位 是\",\n  \"outOfficeId\": \"调出单位 是\",\n  \"actNode\": \"当前环节 是\",\n  \"actStatus\": \"当前状态 是\",\n  \"applyStartTime\": \"申请开始时间 是\",\n  \"applyEndTime\": \"申请结束时间 是\",\n  \"allotStartTime\": \"调拨开始时间 是\",\n  \"allotEndTime\": \"调拨结束时间 是\",\n  \"finishStartTime\": \"完成开始时间 是\",\n  \"finishEndTime\": \"完成结束时间 是\"\n}",
+			"variables": null,
+			"headers": "Content-Type: application/json\n",
+			"method": "POST",
+			"pathVariables": {},
+			"url": "{{baseurl}}/a/api/actAllot/list",
+			"queryParams": [],
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"enabled": true
+				}
+			],
+			"pathVariableData": [],
+			"collectionId": "17402a73-dbca-2325-e45b-182d83b94362",
+			"currentHelper": null,
+			"helperAttributes": null,
+			"rawModeData": "{\n  \"userId\": \"{{userId}}\",\n  \"token\": \"{{token}}\",\n  \"pageNo\": \"1\",\n  \"pageSize\": \"10\",\n  \"applyNumber\": \"\",\n  \"applyOfficeId\": \"\",\n  \"outOfficeId\": \"\",\n  \"actNode\": \"\",\n  \"actStatus\": \"\",\n  \"applyStartTime\": \"\",\n  \"applyEndTime\": \"\",\n  \"allotStartTime\": \"\",\n  \"allotEndTime\": \"\",\n  \"finishStartTime\": \"\",\n  \"finishEndTime\": \"\"\n}"
+		},
+		{
+			"folder": null,
+			"id": "a8ca614c-479f-de9c-a2b9-3a6111fc8ae1",
+			"name": "发送验证码",
+			"dataMode": "raw",
+			"data": [],
+			"auth": null,
+			"events": null,
+			"descriptionFormat": "html",
+			"description": "{\n  \"mobile\": \"手机号码 varchar(11) 非\",\n  \"secret\": \"验证信息 varchar(32) 非\",\n  \"sendType\": \"发送类型 varchar(1) 1：注册  2：找回密码 3：信息变更 非\"\n}",
+			"variables": null,
+			"headers": "Content-Type: application/json\n",
+			"method": "POST",
+			"pathVariables": {},
+			"url": "{{baseurl}}/a/api/smsAuthCode/{{mobile}",
+			"queryParams": [],
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"enabled": true
+				}
+			],
+			"pathVariableData": [],
+			"collectionId": "17402a73-dbca-2325-e45b-182d83b94362",
+			"currentHelper": null,
+			"helperAttributes": null,
+			"rawModeData": "{\n  \"mobile\": \"{{mobile}}\",\n  \"secret\": \"1\",\n  \"sendType\": \"1\"\n}"
+		},
+		{
+			"folder": null,
+			"id": "b7c3c55d-1a6e-dda6-2543-de59ff367731",
+			"name": "获取设备详情",
+			"dataMode": "raw",
+			"data": [],
+			"auth": null,
+			"events": null,
+			"descriptionFormat": "html",
+			"description": "{\n  \"token\": \"验证信息 varchar(32)   非\",\n  \"id\": \"设备ID     非\"\n}",
+			"variables": null,
+			"headers": "Content-Type: application/json\n",
+			"method": "POST",
+			"pathVariables": {},
+			"url": "{{baseurl}}/a/api/device/73e39b3345694d06a8f150e2e06581c4",
+			"queryParams": [],
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"enabled": true
+				}
+			],
+			"pathVariableData": [],
+			"collectionId": "17402a73-dbca-2325-e45b-182d83b94362",
+			"currentHelper": null,
+			"helperAttributes": null,
+			"rawModeData": "{\n  \"token\": \"{{token}}\",\n  \"id\": \"73e39b3345694d06a8f150e2e06581c4\"\n}"
+		},
+		{
+			"folder": null,
+			"id": "bc085a89-2f07-5329-acb5-bced65965109",
+			"name": "获取任务还没启动时的申请单信息",
+			"dataMode": "raw",
+			"data": [],
+			"auth": null,
+			"events": null,
+			"descriptionFormat": "html",
+			"description": "{\n  \"token\": \"验证信息 varchar(32)   非\",\n  \"id\": \"申请单ID     非\",\n  \"actNode\": \"任务节点   1.     待确认类型；2.     待确认调拨；3.     待填调拨单 非\"\n}",
+			"variables": null,
+			"headers": "Content-Type: application/json\n",
+			"method": "POST",
+			"pathVariables": {},
+			"url": "{{baseurl}}/a/api/actApply/23234234",
+			"queryParams": [],
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"pathVariableData": [],
+			"collectionId": "17402a73-dbca-2325-e45b-182d83b94362",
+			"currentHelper": null,
+			"helperAttributes": null,
+			"rawModeData": "{\n  \"token\": \"{{token}}\",\n  \"id\": \"2403ff5060e84c108ad25ac919ce014c\",\n  \"actNode\": \"1\"\n}"
+		},
+		{
+			"folder": null,
+			"id": "bf06c9d0-0808-f832-9fb7-e521f7d6c54f",
+			"name": "获取仓库类型",
+			"dataMode": "raw",
+			"data": [],
+			"auth": null,
+			"events": null,
+			"descriptionFormat": "html",
+			"description": "{\n  \"token\": \"验证信息 varchar(32) 非\"\n}",
+			"variables": null,
+			"headers": "Content-Type: application/json\n",
+			"method": "POST",
+			"pathVariables": {},
+			"url": "{{baseurl}}/a/api/warehouse/getMenuData",
+			"queryParams": [],
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"enabled": true
+				}
+			],
+			"pathVariableData": [],
+			"collectionId": "17402a73-dbca-2325-e45b-182d83b94362",
+			"currentHelper": null,
+			"helperAttributes": null,
+			"rawModeData": "{\n  \"token\": \"{{token}}\"\n}"
+		},
+		{
+			"folder": null,
+			"id": "bf24abcf-a8af-3d34-273f-2d5b00d43a11",
+			"name": "字典下拉框公用接口",
+			"dataMode": "raw",
+			"data": [],
+			"auth": null,
+			"events": null,
+			"descriptionFormat": "html",
+			"description": "{\n  \"key\": \"字典类型 varchar(32) oa_notify_type：公告类型；oa_notify_status：公告状态 非\",\n  \"token\": \"验证信息 varchar(32)   非\"\n}",
+			"variables": null,
+			"headers": "Content-Type: application/json\n",
+			"method": "POST",
+			"pathVariables": {},
+			"url": "{{baseurl}}/a/api/dict/oa_notify_type",
+			"queryParams": [],
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"enabled": true
+				}
+			],
+			"pathVariableData": [],
+			"collectionId": "17402a73-dbca-2325-e45b-182d83b94362",
+			"currentHelper": null,
+			"helperAttributes": null,
+			"rawModeData": "{\n  \"key\": \"oa_notify_type\",\n  \"token\": \"{{token}}\"\n}"
+		},
+		{
+			"folder": null,
+			"id": "c228f3d1-3440-c23a-bbef-5574fc9ee1a6",
+			"name": "保存发货单",
+			"dataMode": "raw",
+			"data": [],
+			"auth": null,
+			"events": null,
+			"descriptionFormat": "html",
+			"description": "{\n  \"userId\": \"用户Id varchar(32) 非\",\n  \"token\": \"验证信息 varchar(32) 非\"\n}",
+			"variables": null,
+			"headers": "Content-Type: application/json\n",
+			"method": "POST",
+			"pathVariables": {},
+			"url": "{{baseurl}}/a/api/actApply/saveDeliveryLog",
+			"queryParams": [],
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"enabled": true
+				}
+			],
+			"pathVariableData": [],
+			"collectionId": "17402a73-dbca-2325-e45b-182d83b94362",
+			"currentHelper": null,
+			"helperAttributes": null,
+			"rawModeData": "{\n  \"userId\": \"{{userId}}\",\n  \"token\": \"{{token}}\"\n}"
+		},
+		{
+			"folder": null,
+			"id": "c4ed8634-e716-0fc0-8311-05996cb2cd9f",
+			"name": "登录之后首页面各任务数量查询",
+			"dataMode": "raw",
+			"data": [],
+			"auth": null,
+			"events": null,
+			"descriptionFormat": "html",
+			"description": "{\n  \"userId\": \"用户Id varchar(32) 非\",\n  \"token\": \"验证信息 varchar(32) 非\"\n}",
+			"variables": null,
+			"headers": "Content-Type: application/json\n",
+			"method": "POST",
+			"pathVariables": {},
+			"url": "{{baseurl}}/a/api/goToIndex",
+			"queryParams": [],
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"enabled": true
+				}
+			],
+			"pathVariableData": [],
+			"collectionId": "17402a73-dbca-2325-e45b-182d83b94362",
+			"currentHelper": null,
+			"helperAttributes": null,
+			"rawModeData": "{\n  \"userId\": \"{{userId}}\",\n  \"token\": \"{{token}}\"\n}"
+		},
+		{
+			"folder": null,
+			"id": "d9ff6d46-01eb-436b-fcac-3e497aba7477",
+			"name": "显示厂家主机型号",
+			"dataMode": "raw",
+			"data": [],
+			"auth": null,
+			"events": null,
+			"descriptionFormat": "html",
+			"description": "{\n  \"findType\": \"查询类型 varchar(32) 1: 查询列表；2: 选择框； 非\",\n  \"token\": \"验证信息 varchar(32) 非\",\n  \"deviceType\": \"查询主机型号时需要联动的设备类型 varchar(1) 查询厂家主机型号时必填 非\",\n  \"deviceName\": \"查询主机型号时需要联动的设备名称 varchar(1) 是\",\n  \"manufacturerModel\": \"主机型号 是\",\n  \"userId\": \"用户Id varchar(32) 非\",\n  \"pageNo\": \"页数 是\",\n  \"pageSize\": \"每页显示的数量 是\"\n}",
+			"variables": null,
+			"headers": "Content-Type: application/json\n",
+			"method": "POST",
+			"pathVariables": {},
+			"url": "{{baseurl}}/a/api/manufacturerModel/list",
+			"queryParams": [],
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"enabled": true
+				}
+			],
+			"pathVariableData": [],
+			"collectionId": "17402a73-dbca-2325-e45b-182d83b94362",
+			"currentHelper": null,
+			"helperAttributes": null,
+			"rawModeData": "{\n  \"findType\": \"1\",\n  \"deviceType\": \"de9612ebfbc44392b6063f48b61d10c9\",\n  \"deviceName\": \"\",\n  \"manufacturerModel\": \"\",\n  \"userId\": \"{{userId}}\",\n  \"token\": \"{{token}}\",\n  \"pageNo\": \"1\",\n  \"pageSize\": \"10\"\n}"
+		},
+		{
+			"folder": null,
+			"id": "e1a1a8f4-1b1a-ca3c-9d66-2108a8ff5032",
+			"name": "修改手机/密码接口",
+			"dataMode": "raw",
+			"data": [],
+			"auth": null,
+			"events": null,
+			"descriptionFormat": "html",
+			"description": "{}",
+			"variables": null,
+			"headers": "Content-Type: application/json\n",
+			"method": "PUT",
+			"pathVariables": {},
+			"url": "{{baseurl}}/a/api/reset/{userId}",
+			"queryParams": [],
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"pathVariableData": [],
+			"collectionId": "17402a73-dbca-2325-e45b-182d83b94362",
+			"currentHelper": null,
+			"helperAttributes": null,
+			"rawModeData": "{\n  \"resetType\": \"1\",\n  \"userId\": \"{{userId}}\",\n  \"token\": \"{{token}}\",\n  \"mobile\": \"{{mobile}}\",\n  \"code\": \"code\",\n  \"oldPassword\": \"123456\",\n  \"password\": \"123456\",\n  \"refPassword\": \"123456\"\n}"
+		},
+		{
+			"folder": null,
+			"id": "e94c046f-a628-20c2-682f-a0386eb8fafa",
+			"name": "显示消息详细",
+			"dataMode": "raw",
+			"data": [],
+			"auth": null,
+			"events": null,
+			"descriptionFormat": "html",
+			"description": "{\n  \"token\": \"验证信息 varchar(32)   非\",\n  \"id\": \"公告ID     非\"\n}",
+			"variables": null,
+			"headers": "Content-Type: application/json\n",
+			"method": "POST",
+			"pathVariables": {},
+			"url": "{{baseurl}}/a/api/msgDetail/{id}",
+			"queryParams": [],
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"enabled": true
+				}
+			],
+			"pathVariableData": [],
+			"collectionId": "17402a73-dbca-2325-e45b-182d83b94362",
+			"currentHelper": null,
+			"helperAttributes": null,
+			"rawModeData": "{\n  \"token\": \"{{token}}\",\n  \"id\": \"16ea8d7bea474daea3b14fa0b8dfa8ce\"\n}"
+		}
+	]
+}
